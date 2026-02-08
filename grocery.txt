@@ -1,1 +1,9 @@
-grocery store - kanha ji family mart
+Kanha Ji Family Mart
+
+Type: Local grocery / convenience store
+Address: Main Road, Near Temple, YourTown (replace with exact address)
+Phone: +91 12345 67890
+Hours: Mon–Sun 7:00 AM – 10:00 PM
+
+Notes: Family-run store focusing on fresh produce, daily staples, snacks, and home delivery.
+Website: (this repo contains a demo static site — replace assets and map with real data)
