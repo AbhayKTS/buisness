@@ -143,8 +143,9 @@ function renderProducts(productsToRender) {
 function filterProducts() {
   const searchTerm = searchInput.value.toLowerCase();
   const category = categoryFilter.value;
+  const sortBy = sortFilter ? sortFilter.value : 'default';
 
-  let filtered = products;
+  let filtered = [...products];
 
   if (category !== 'all') {
     filtered = filtered.filter(p => p.category === category);
@@ -155,6 +156,19 @@ function filterProducts() {
       p.name.toLowerCase().includes(searchTerm) || 
       p.category.toLowerCase().includes(searchTerm)
     );
+  }
+
+  // Sort products
+  switch(sortBy) {
+    case 'price-low':
+      filtered.sort((a, b) => a.price - b.price);
+      break;
+    case 'price-high':
+      filtered.sort((a, b) => b.price - a.price);
+      break;
+    case 'name':
+      filtered.sort((a, b) => a.name.localeCompare(b.name));
+      break;
   }
 
   renderProducts(filtered);
