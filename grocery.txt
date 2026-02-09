@@ -1,9 +1,47 @@
 Kanha Ji Family Mart
+====================
 
 Type: Local grocery / convenience store
-Address: Main Road, Near Temple, YourTown (replace with exact address)
-Phone: +91 12345 67890
-Hours: Mon–Sun 7:00 AM – 10:00 PM
+Established: 2015 (10+ years serving the community)
 
-Notes: Family-run store focusing on fresh produce, daily staples, snacks, and home delivery.
-Website: (this repo contains a demo static site — replace assets and map with real data)
+📍 Location
+-----------
+Address: Main Road, Near Temple, YourTown
+(Replace with exact address when deploying)
+
+📞 Contact
+----------
+Phone: +91 12345 67890
+WhatsApp: +91 12345 67890
+Email: kanhajifamilymart@gmail.com
+
+🕐 Hours
+--------
+Monday - Sunday: 7:00 AM – 10:00 PM
+Open all days including holidays
+
+🛒 Products
+-----------
+- Fresh Produce (Vegetables, Fruits)
+- Daily Essentials (Rice, Atta, Dal, Oil)
+- Dairy Products (Milk, Curd, Paneer, Eggs)
+- Snacks & Beverages (Chips, Biscuits, Cold Drinks)
+- Household Items (Cleaning, Toiletries)
+
+🚚 Services
+-----------
+- Free home delivery on orders above ₹500
+- WhatsApp ordering available
+- Fresh stock daily
+- Fair prices guaranteed
+
+📱 Website
+----------
+This repository contains the demo website.
+Preview: Open index.html in browser
+Deploy: GitHub Pages or any static hosting
+
+💡 Notes
+--------
+Family-run store focusing on fresh produce, fair prices, and friendly service.
+Customers are households and busy professionals who appreciate convenience and quality.
