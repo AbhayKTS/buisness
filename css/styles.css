@@ -295,15 +295,20 @@ form input:focus,form textarea:focus{
   .hero-text h2{font-size:1.8rem}
   .hero-image img{width:100%;max-width:350px}
   .hero-ctas{justify-content:center}
+  .hero-features{justify-content:center}
   .nav{display:none}
   .contact .contact-grid{grid-template-columns:1fr}
   .header-inner{flex-wrap:wrap;justify-content:center;gap:0.5rem}
   .brand h1{font-size:1rem}
   .call-btn{font-size:0.85rem;padding:0.5rem 0.75rem}
+  .about-content{grid-template-columns:1fr}
+  .footer-content{grid-template-columns:1fr;text-align:center}
 }
 @media(max-width:600px){
   .hero{padding:2rem 0}
   .section{padding:2.5rem 0}
   .btn{padding:0.6rem 1rem;font-size:0.9rem}
   .cards{grid-template-columns:1fr}
+  .hero-features{flex-direction:column;gap:0.5rem}
+  .contact-buttons{flex-direction:column}
 }
