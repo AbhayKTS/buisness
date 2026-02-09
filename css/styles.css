@@ -221,8 +221,19 @@ form input:focus,form textarea:focus{
 .fade-in{animation:fadeInUp 0.6s ease forwards}
 
 @media(max-width:900px){
-  .hero .container{flex-direction:column}
-  .hero-image img{width:100%}
+  .hero .container{flex-direction:column;text-align:center}
+  .hero-text h2{font-size:1.8rem}
+  .hero-image img{width:100%;max-width:350px}
+  .hero-ctas{justify-content:center}
   .nav{display:none}
   .contact .contact-grid{grid-template-columns:1fr}
+  .header-inner{flex-wrap:wrap;justify-content:center;gap:0.5rem}
+  .brand h1{font-size:1rem}
+  .call-btn{font-size:0.85rem;padding:0.5rem 0.75rem}
+}
+@media(max-width:600px){
+  .hero{padding:2rem 0}
+  .section{padding:2.5rem 0}
+  .btn{padding:0.6rem 1rem;font-size:0.9rem}
+  .cards{grid-template-columns:1fr}
 }
