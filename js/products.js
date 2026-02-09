@@ -228,6 +228,10 @@ function updateCartUI() {
   cartCount.textContent = totalItems;
   cartTotal.textContent = `₹${totalPrice}`;
 
+  // Pulse animation on cart button
+  cartBtn.classList.add('pulse');
+  setTimeout(() => cartBtn.classList.remove('pulse'), 300);
+
   if (cart.length === 0) {
     cartItems.innerHTML = `
       <div class="empty-cart">
