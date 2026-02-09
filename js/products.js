@@ -93,6 +93,7 @@ const cartTotal = document.getElementById('cartTotal');
 const orderBtn = document.getElementById('orderBtn');
 const clearCartBtn = document.getElementById('clearCart');
 const noResults = document.getElementById('noResults');
+const productCountEl = document.getElementById('productCount');
 const yearSpan = document.getElementById('year');
 
 // Set year
