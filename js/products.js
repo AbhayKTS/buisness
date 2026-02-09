@@ -59,6 +59,20 @@ const products = [
   { id: 46, name: "Garbage Bags", category: "household", price: 50, unit: "per pack", emoji: "🗑️", badge: null },
   { id: 47, name: "Mosquito Coil", category: "household", price: 45, unit: "per pack", emoji: "🦟", badge: null },
   { id: 48, name: "Colgate Toothpaste", category: "household", price: 55, unit: "per tube", emoji: "🦷", badge: null },
+
+  // More products
+  { id: 49, name: "Ginger (Adrak)", category: "vegetables", price: 120, unit: "per kg", emoji: "🫚", badge: null },
+  { id: 50, name: "Garlic (Lahsun)", category: "vegetables", price: 200, unit: "per kg", emoji: "🧄", badge: null },
+  { id: 51, name: "Green Chilli", category: "vegetables", price: 80, unit: "per kg", emoji: "🌶️", badge: null },
+  { id: 52, name: "Coriander Leaves", category: "vegetables", price: 20, unit: "per bunch", emoji: "🌿", badge: "Fresh" },
+  { id: 53, name: "Guava", category: "fruits", price: 60, unit: "per kg", emoji: "🍐", badge: "Seasonal" },
+  { id: 54, name: "Sweet Lime (Mosambi)", category: "fruits", price: 70, unit: "per kg", emoji: "🍋", badge: null },
+  { id: 55, name: "Ghee (500g)", category: "dairy", price: 320, unit: "per jar", emoji: "🧈", badge: "Pure" },
+  { id: 56, name: "Khoya (250g)", category: "dairy", price: 120, unit: "per pack", emoji: "🥛", badge: null },
+  { id: 57, name: "Moong Dal (1kg)", category: "staples", price: 130, unit: "per kg", emoji: "🫘", badge: null },
+  { id: 58, name: "Rajma (1kg)", category: "staples", price: 160, unit: "per kg", emoji: "🫘", badge: null },
+  { id: 59, name: "Poha (500g)", category: "staples", price: 40, unit: "per pack", emoji: "🌾", badge: null },
+  { id: 60, name: "Bournvita (500g)", category: "snacks", price: 230, unit: "per jar", emoji: "☕", badge: null },
 ];
 
 // Cart (stored in localStorage)
