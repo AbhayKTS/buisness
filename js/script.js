@@ -76,4 +76,21 @@ document.addEventListener('DOMContentLoaded',function(){
     errorDiv.textContent = message;
     input.parentNode.insertBefore(errorDiv, input.nextSibling);
   }
+
+  // Scroll animations - fade in elements when they enter viewport
+  const animateOnScroll = () => {
+    const elements = document.querySelectorAll('.card, .about-content, .contact-grid');
+    
+    elements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight - 100;
+      
+      if(isVisible && !el.classList.contains('animated')){
+        el.classList.add('animated', 'fade-in');
+      }
+    });
+  };
+  
+  window.addEventListener('scroll', animateOnScroll);
+  animateOnScroll(); // Run on load
 });
