@@ -94,6 +94,8 @@ const orderBtn = document.getElementById('orderBtn');
 const clearCartBtn = document.getElementById('clearCart');
 const noResults = document.getElementById('noResults');
 const productCountEl = document.getElementById('productCount');
+const toast = document.getElementById('toast');
+const toastMessage = document.getElementById('toastMessage');
 const yearSpan = document.getElementById('year');
 
 // Set year
