@@ -195,6 +195,17 @@ function addToCart(productId) {
   saveCart();
   updateCartUI();
   filterProducts(); // Re-render to show quantity controls
+  
+  // Show toast
+  showToast(`${product.name} added to cart!`);
+}
+
+// Show Toast Notification
+function showToast(message) {
+  if(!toast || !toastMessage) return;
+  toastMessage.textContent = message;
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 2000);
 }
 
 // Update Quantity
