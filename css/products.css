@@ -48,6 +48,14 @@
 
 /* Products Grid */
 .products-section{padding:2rem 0 4rem}
+.products-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:1rem;
+}
+.products-count{color:var(--muted);font-size:0.95rem}
+.products-count span{font-weight:600;color:var(--primary)}
 .products-grid{
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
