@@ -293,6 +293,7 @@ function clearCart() {
 // Event Listeners
 searchInput.addEventListener('input', filterProducts);
 categoryFilter.addEventListener('change', filterProducts);
+if(sortFilter) sortFilter.addEventListener('change', filterProducts);
 cartBtn.addEventListener('click', toggleCart);
 closeCart.addEventListener('click', toggleCart);
 cartOverlay.addEventListener('click', toggleCart);
