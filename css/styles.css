@@ -438,6 +438,28 @@ form input:focus,form textarea:focus{
   box-shadow:0 6px 20px rgba(37,211,102,0.5);
 }
 
+/* Back to Top Button */
+.back-to-top{
+  position:fixed;
+  bottom:90px;
+  right:20px;
+  width:45px;
+  height:45px;
+  background:var(--primary);
+  color:#fff;
+  border:none;
+  border-radius:50%;
+  font-size:1.25rem;
+  cursor:pointer;
+  box-shadow:var(--shadow);
+  z-index:999;
+  opacity:0;
+  visibility:hidden;
+  transition:all 0.3s ease;
+}
+.back-to-top.visible{opacity:1;visibility:visible}
+.back-to-top:hover{background:var(--primary-light);transform:translateY(-3px)}
+
 /* Mobile Menu */
 .mobile-menu-btn{
   display:none;
