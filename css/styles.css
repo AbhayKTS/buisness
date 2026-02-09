@@ -291,6 +291,23 @@ form input:focus,form textarea:focus{
 .contact-form-wrap h4,.contact-info h4,.map h4{color:var(--primary-dark);margin:0 0 1rem}
 .contact-buttons{display:flex;gap:1rem;margin-top:1.5rem;flex-wrap:wrap}
 
+/* Form validation styles */
+.input-error{border-color:var(--danger) !important}
+.error-msg{
+  color:var(--danger);
+  font-size:0.85rem;
+  margin-top:-0.5rem;
+  margin-bottom:0.5rem;
+}
+.success-msg{
+  background:#d4edda;
+  color:#155724;
+  padding:1rem;
+  border-radius:8px;
+  margin-top:1rem;
+  text-align:center;
+}
+
 /* Mobile Menu */
 .mobile-menu-btn{
   display:none;
