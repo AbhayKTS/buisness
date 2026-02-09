@@ -283,3 +283,27 @@
 @media(max-width:480px){
   .products-grid{grid-template-columns:1fr}
 }
+
+/* Floating WhatsApp Button */
+.whatsapp-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  width:60px;
+  height:60px;
+  background:#25D366;
+  color:#fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.75rem;
+  text-decoration:none;
+  box-shadow:0 4px 15px rgba(37,211,102,0.4);
+  z-index:1000;
+  transition:all 0.3s ease;
+}
+.whatsapp-float:hover{
+  transform:scale(1.1);
+  box-shadow:0 6px 20px rgba(37,211,102,0.5);
+}
