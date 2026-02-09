@@ -57,6 +57,14 @@ body{
   box-shadow:0 2px 8px rgba(247,127,0,0.3);
 }
 .call-btn:hover{background:var(--accent-light);transform:translateY(-2px)}
+.header-info{display:flex;align-items:center;gap:0.75rem}
+.store-hours{
+  color:rgba(255,255,255,0.9);
+  font-size:0.85rem;
+  background:rgba(255,255,255,0.1);
+  padding:0.4rem 0.75rem;
+  border-radius:6px;
+}
 .hero{
   padding:4rem 0;
   background:linear-gradient(135deg,#e8f5e9 0%,#fff3e0 100%);
