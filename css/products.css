@@ -288,6 +288,24 @@
   font-size:1.1rem;
 }
 
+/* Loading State */
+.loading-state{
+  grid-column:1/-1;
+  text-align:center;
+  padding:4rem 2rem;
+  color:var(--muted);
+}
+.loader{
+  font-size:3rem;
+  display:block;
+  margin-bottom:1rem;
+  animation:bounce 1s infinite;
+}
+@keyframes bounce{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-10px)}
+}
+
 /* Responsive */
 @media(max-width:768px){
   .search-bar{flex-direction:column}
