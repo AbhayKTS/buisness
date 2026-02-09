@@ -103,6 +103,9 @@ if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 function renderProducts(productsToRender) {
   productsGrid.innerHTML = '';
   
+  // Update count
+  if(productCountEl) productCountEl.textContent = productsToRender.length;
+  
   if (productsToRender.length === 0) {
     noResults.style.display = 'block';
     return;
