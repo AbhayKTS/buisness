@@ -158,6 +158,47 @@ body{
   margin-bottom:1rem;
   display:block;
 }
+
+/* Special Offers */
+.offers-section{background:linear-gradient(135deg,#fff3e0 0%,#e8f5e9 100%)}
+.offers-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:1.25rem;
+  margin-top:2rem;
+}
+.offer-card{
+  background:#fff;
+  padding:1.5rem;
+  border-radius:var(--radius);
+  text-align:center;
+  box-shadow:var(--shadow);
+  position:relative;
+  transition:all 0.3s ease;
+}
+.offer-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+.offer-card.highlight{
+  border:2px solid var(--accent);
+  background:linear-gradient(135deg,#fff9e6 0%,#fff 100%);
+}
+.offer-badge{
+  position:absolute;
+  top:-10px;
+  right:-10px;
+  background:var(--danger);
+  color:#fff;
+  padding:0.25rem 0.6rem;
+  border-radius:4px;
+  font-size:0.75rem;
+  font-weight:700;
+}
+.offer-emoji{font-size:3rem;display:block;margin-bottom:0.5rem}
+.offer-card h4{margin:0.5rem 0;color:var(--primary-dark)}
+.offer-prices{display:flex;gap:0.5rem;justify-content:center;align-items:center}
+.old-price{text-decoration:line-through;color:var(--muted);font-size:0.9rem}
+.new-price{font-size:1.25rem;font-weight:700;color:var(--primary)}
+.offer-text{color:var(--muted);font-size:0.9rem}
+
 .contact .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start}
 .contact-info{background:#fff;padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow)}
 .contact-info p{margin:0.75rem 0;display:flex;align-items:center;gap:0.5rem}
