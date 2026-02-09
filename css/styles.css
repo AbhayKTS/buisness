@@ -297,6 +297,45 @@ form input:focus,form textarea:focus{
   box-shadow:var(--shadow-lg);
 }
 
+/* Testimonials */
+.testimonials-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.5rem;
+  margin-top:2rem;
+}
+.testimonial-card{
+  background:#fff;
+  padding:1.5rem;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  border-left:4px solid var(--accent);
+}
+.testimonial-stars{margin-bottom:0.75rem}
+.testimonial-text{
+  color:var(--muted);
+  font-style:italic;
+  line-height:1.6;
+  margin-bottom:1rem;
+}
+.testimonial-author{
+  display:flex;
+  align-items:center;
+  gap:0.75rem;
+}
+.author-avatar{
+  font-size:2rem;
+  background:#e8f5e9;
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.testimonial-author strong{display:block;color:var(--primary-dark)}
+.testimonial-author span{font-size:0.85rem;color:var(--muted)}
+
 /* Contact section */
 .contact-form-wrap{background:#fff;padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow)}
 .contact-form-wrap h4,.contact-info h4,.map h4{color:var(--primary-dark);margin:0 0 1rem}
