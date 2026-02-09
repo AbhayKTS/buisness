@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Shop Products — Kanha Ji Family Mart</title>
+    <meta name="description" content="Browse and order groceries online from Kanha Ji Family Mart. Fresh vegetables, fruits, dairy, snacks and more.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="icon" href="assets/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <a href="index.html" style="display:flex;align-items:center;gap:0.75rem;text-decoration:none">
+            <img src="assets/logo.png" alt="Kanha Ji Family Mart logo" class="logo">
+            <h1>Kanha Ji Family Mart</h1>
+          </a>
+        </div>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="index.html#products">Categories</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button class="cart-btn" id="cartBtn">🛒 Cart (<span id="cartCount">0</span>)</button>
+          <a class="call-btn" href="tel:+911234567890">📞 Call</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Page Header -->
+      <section class="page-header">
+        <div class="container">
+          <h2>🛍️ Shop Our Products</h2>
+          <p>Fresh groceries delivered to your doorstep. Add items to cart and order via WhatsApp!</p>
+        </div>
+      </section>
+
+      <!-- Search and Filter -->
+      <section class="search-section">
+        <div class="container">
+          <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="🔍 Search products (e.g., tomato, rice, milk...)">
+            <select id="categoryFilter">
+              <option value="all">All Categories</option>
+              <option value="vegetables">🥬 Vegetables</option>
+              <option value="fruits">🍎 Fruits</option>
+              <option value="dairy">🥛 Dairy & Eggs</option>
+              <option value="staples">🍚 Staples & Grains</option>
+              <option value="snacks">🍪 Snacks</option>
+              <option value="household">🧹 Household</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products Grid -->
+      <section class="products-section">
+        <div class="container">
+          <div class="products-grid" id="productsGrid">
+            <!-- Products will be loaded by JavaScript -->
+          </div>
+          <p class="no-results" id="noResults" style="display:none">No products found. Try a different search term.</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-sidebar" id="cartSidebar">
+      <div class="cart-header">
+        <h3>🛒 Your Cart</h3>
+        <button class="close-cart" id="closeCart">✕</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <!-- Cart items will be loaded by JavaScript -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cartTotal">₹0</span>
+        </div>
+        <button class="btn primary order-btn" id="orderBtn">📱 Order on WhatsApp</button>
+        <button class="btn outline clear-btn" id="clearCart">🗑️ Clear Cart</button>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h4>🛒 Kanha Ji Family Mart</h4>
+            <p>Your trusted neighbourhood grocery store since 2015.</p>
+          </div>
+          <div class="footer-contact">
+            <p>📞 +91 12345 67890</p>
+            <p>🕐 7:00 AM – 10:00 PM</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span id="year"></span> Kanha Ji Family Mart</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+  </body>
+</html>
